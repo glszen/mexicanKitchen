@@ -1,0 +1,63 @@
+.background {
+    background-color: #46e86e;
+}
+
+.sigmar-regular {
+    font-family: "Sigmar", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: xx-large;
+    color: antiquewhite;
+  }
+
+  .hover {
+    border: 7px solid;
+    border-image: repeating-linear-gradient(135deg,#e9dbd5 0 10px,#E97F02 0 20px,#db1d1d 0 30px) 8;
+    -webkit-mask: 
+      conic-gradient(from 180deg at top 8px right 8px, #0000 90deg,#000 0)
+       var(--_i,200%) 0  /200% var(--_i,8px) border-box no-repeat,
+      conic-gradient(at bottom 8px left  8px,  #0000 90deg,#000 0)
+       0   var(--_i,200%)/var(--_i,8px) 200% border-box no-repeat,
+      linear-gradient(#000 0 0) padding-box no-repeat;
+    transition: .3s, -webkit-mask-position .3s .3s;
+  }
+  
+  .hover:hover {
+    --_i: 100%;
+    color: #CC333F;
+    transition: .3s, -webkit-mask-size .3s .3s;
+  }
+
+
+  .two{
+    border:dotted 5px hsla(0, 95%, 35%, 1);
+  }
+
+  .tacosize{
+    width: 220px;
+    height: 220px;
+    margin-left:0.7rem ;
+    margin-top: 0.7rem;
+  }
+
+  .burritosize{
+    width: 210px;
+    height: 125px;
+    margin-left:0.7rem ;
+    margin-top: 0.7rem;
+  }
+
+  .sigmar-small {
+    font-family: "Sigmar", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: x-large;
+    color: antiquewhite;
+  }
+
+  .quesasize{
+    width: 260px;
+    height: 160px;
+    margin-left:1.8rem ;
+    margin-top: 0.5rem;
+  }

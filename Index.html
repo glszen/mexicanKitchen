@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Sigmar&display=swap" rel="stylesheet">
+  </head>
+  <body class="background">
+    <div class="col-12 container"> 
+        <div class="row">
+        </div>
+        <div>
+            <h1 class="sigmar-regular ps-3 text-center pt-5" style="font-size: xx-large;"> MEXICAN MENU <img style="width: 5rem;" src="./Images/hat.png" alt=""></h1>
+        </div>
+
+        <!-- Home Section -->
+        <div class="col-12 sigmar-regular justify-content-center align-items-center d-flex">
+          <div class="row pt-5 justify-content-center d-flex w-75">
+
+             <div id="homediv" class="row justify-content-center d-flex text-center">
+
+            <div onclick="nachosButton()" id="home" class="col-5 hover ">
+              <img class="w-75" src="./Images/nachos.png" alt="">
+              <div onclick="nachosButton()" class="text-center col-12" style="font-size: x-large; color: black;">NACHOS</div>
+            </div>
+            
+            <div onclick="tacosButton()" id="home2" class="col-5 text-center hover">
+              <img class="w-100 pt-4" src="./Images/tacos.png" alt="">
+              <p class="text-center col-12" style="font-size: x-large; color: black;">TACOS</p>
+            </div>
+          </div>
+  
+          <div id="homediv"  class="row justify-content-center d-flex text-center">
+            
+            <div id="home3" onclick="burritosButton()" class="col-5 hover">
+              <img class="w-75" src="./Images/burrito.png" alt="Burrito">
+              <p class="text-center col-12" style="font-size: x-large; color: black;">BURRITO</p>
+            </div>
+  
+            <div onclick="quessaButton()" id="home4" class="col-5 text-center hover">
+              <img class="w-100 pt-5" src="./Images/quesa.png" alt="Quesadillas">
+              <p class="text-center col-12" style="font-size: x-large; color: black;">QUESSADILLAS</p>
+            </div>
+          </div>
+        </div>      
+        </div>
+
+        <!-- Nachos Section -->
+        <div class="col-12 sigmar-regular align-items-center d-flex"> <!-- Nachos is hidden initially -->
+          <div class="col-4 justify-content-center d-flex"  style="display: none;">
+            <div id="nachos" class="card w-75 h-100 two " style="width: 18rem; background-color: transparent; display: none;">
+              <img class="card-img-top pt-4" src="./Images/3.png" alt="Sweet Salsa">
+              <div class="card-body pt-5">
+                <p class="text-center pb-5" >Sweet Salsa</p>
+                <p class="card-text text-center pb-2">Corn chips, Guacamole, Salsa </p>
+                <p class="card-text text-center">$ 15.00</p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-4 justify-content-center d-flex">
+            <div id="nachos2" class="card w-75 two" style="width: 18rem; background-color: transparent; display: none;">
+              <img class="card-img-top" src="./Images/2.png" alt="Cheese">
+              <div class="card-body">
+                <p class="text-center pb-5">Cheese</p>
+                <p class="card-text text-center pb-5">Corn chips, Salsa</p>
+                <p class="card-text text-center">$ 13.00</p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-4 justify-content-center d-flex">
+            <div id="nachos3" class="card w-75 two" style="width: 18rem; background-color: transparent; display: none;">
+              <img class="card-img-top" src="./Images/1.png" alt="Quacamole">
+              <div class="card-body">
+                <p class="text-center pb-5">Quacamole</p>
+                <p class="card-text text-center pb-5">Corn chips, Salsa, Cheese</p>
+                <p class="card-text text-center">$ 16.00</p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="justify-content-center d-flex pt-4">
+            <button id="back2" class="two" onclick="backHome()" style="background-color: transparent; display: none;"> 
+              Back Menu
+            </button>
+          </div>
+          
+        </div>
+
+               <!-- Tacos Section -->
+               <div class="col-12 sigmar-regular align-items-center d-flex"> <!-- Tacos is hidden initially -->
+
+                <div class="col-3 justify-content-center d-flex"  style="display: none;">
+                  <div id="tacos" class="card w-75 two " style="width: 18rem; background-color: transparent; display: none;">
+                    <img class="card-img-top tacosize"  src="./Images/chicken.png" alt="Chicken">
+                    <div class="card-body">
+                      <p class="text-center pb-5" >Chicken</p>
+                      <p class="card-text text-center pb-5">Shell, Tortilla, Guacamole, Salsa </p>
+                      <p class="card-text text-center">$ 19.00</p>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="col-3 justify-content-center d-flex">
+                  <div id="tacos2" class="card w-75 two" style="width: 18rem; background-color: transparent; display: none;">
+                    <img class="card-img-top tacosize" src="./Images/grilled.png" alt="Grilled Pork">
+                    <div class="card-body">
+                      <p class="text-center pb-5">Grilled Pork</p>
+                      <p class="card-text text-center pb-5">Shell, Tortilla, Salsa</p>
+                      <p class="card-text text-center">$ 17.00</p>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="col-3 justify-content-center d-flex">
+                  <div id="tacos3" class="card w-75 two" style="width: 18rem; background-color: transparent; display: none;">
+                    <img class="card-img-top tacosize" src="./Images/vege.png" alt="Quacamole">
+                    <div class="card-body">
+                      <p class="text-center pb-5">Vegetarian</p>
+                      <p class="card-text text-center pb-5">Shell, Tortilla, Guacamole, Salsa</p>
+                      <p class="card-text text-center">$ 18.00</p>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="col-3 justify-content-center d-flex">
+                  <div id="tacos4" class="card w-75 two" style="width: 18rem; background-color: transparent; display: none;">
+                    <img class="card-img-top tacosize" src="./Images/beef.png" alt="Quacamole">
+                    <div class="card-body">
+                      <p class="text-center pb-5">Beef</p>
+                      <p class="card-text text-center pb-5">Shell, Tortilla, Salsa</p>
+                      <p class="card-text text-center pt-5">$ 15.00</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="justify-content-center d-flex">
+                  <button id="back" class="two" onclick="backHome()" style="background-color: transparent; display: none;"> 
+                    Back Menu
+                  </button>
+                </div>
+                
+              </div>
+
+
+                <!-- Burrito Section -->
+                <div class="col-12 sigmar-small align-items-center d-flex pt-5"> <!-- Burrito is hidden initially -->
+
+                  <div class="col-3 justify-content-center d-flex"  style="display: none;">
+                    <div id="burrito" class="card w-75 two pt-5 " style="width: 18rem; background-color: transparent; display: none;">
+                      <img class="card-img-top burritosize"  src="./Images/pork.png" alt="Chicken">
+                      <div class="card-body">
+                        <p class="text-center" >Pork</p>
+                        <p class="card-text text-center pt-5">Tortilla, Salsa, Cheese, Guacamole</p>
+                        <p class="card-text text-center pb-5 pt-5">$ 20.00</p>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div class="col-3 justify-content-center d-flex">
+                    <div id="burrito1" class="card w-75 two pt-5" style="width: 18rem; background-color: transparent; display: none;">
+                      <img class="card-img-top burritosize" src="./Images/chili.png" alt="Grilled Pork">
+                      <div class="card-body ">
+                        <p class="text-center">Chili Beef</p>
+                        <p class="card-text text-center pt-5">Tortilla, Guacamole, Salsa, Cheese</p>
+                        <p class="card-text text-center pb-5 pt-4">$ 17.00</p>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div class="col-3 justify-content-center d-flex">
+                    <div id="burrito2" class="card w-75 two pt-5" style="width: 18rem; background-color: transparent; display: none;">
+                      <img class="card-img-top burritosize" src="./Images/spicy.png" alt="Quacamole">
+                      <div class="card-body ">
+                        <p class="text-center">Spicy Chicken</p>
+                        <p class="card-text text-center pt-5">Tortilla, Guacamole, Salsa, Cheese</p>
+                        <p class="card-text text-center pb-5 pt-4">$ 19.00</p>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div class="col-3 justify-content-center d-flex">
+                    <div id="burrito3" class="card w-75 two pt-5" style="width: 18rem; background-color: transparent; display: none;">
+                      <img class="card-img-top burritosize" src="./Images/veget.png" alt="Quacamole">
+                      <div class="card-body">
+                        <p class="text-center">Vegetarian</p>
+                        <p class="card-text text-center pt-5">Tortilla, Guacamole, Salsa</p>
+                        <p class="card-text text-center pb-5 pt-4">$ 15.00</p>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="justify-content-center d-flex">
+                    <button id="back3" class="two" onclick="backHome()" style="background-color: transparent; display: none;"> 
+                      Back Menu
+                    </button>
+                  </div>
+                  
+                </div>
+
+
+                     <!-- Quessadillas Section -->
+                     <div class="col-12 sigmar-small align-items-center d-flex"> <!-- Quessadillas is hidden initially -->
+
+                      <div class="col-4 justify-content-center d-flex"  style="display: none;">
+                        <div id="quessa" class="card w-75 two pt-5 " style="width: 18rem; background-color: transparent; display: none;">
+                          <img class="card-img-top quesasize"  src="./Images/quesabeef.png" alt="Chicken">
+                          <div class="card-body">
+                            <p class="text-center">Chili Chicken</p>
+                            <p class="card-text text-center pt-5 pb-5 ">Tortilla, Guacamole, Salsa</p>
+                            <p class="card-text text-center">$ 18.00</p>
+                          </div>
+                        </div>
+                      </div>
+                    
+                      <div class="col-4 justify-content-center d-flex">
+                        <div id="quessa1" class="card w-75 two pt-5" style="width: 18rem; background-color: transparent; display: none;">
+                          <img class="card-img-top quesasize" src="./Images/quesavege.png" alt="Grilled Pork">
+                          <div class="card-body ">
+                            <p class="text-center">Vegetarian</p>
+                            <p class="card-text text-center pt-5 pb-5 ">Tortilla, Guacamole, Salsa</p>
+                            <p class="card-text text-center ">$ 16.00</p>
+                          </div>
+                        </div>
+                      </div>
+                    
+                      <div class="col-4 justify-content-center d-flex">
+                        <div id="quessa2" class="card w-75 two pt-5" style="width: 18rem; background-color: transparent; display: none;">
+                          <img class="card-img-top quesasize" src="./Images/quesachees.png" alt="Quacamole">
+                          <div class="card-body">
+                            <p class="text-center ">Cheese</p>
+                            <p class="card-text text-center pb-5 pt-5">Tortilla,  Cheese, Salsa</p>
+                            <p class="card-text text-center">$ 15.00</p> 
+                          </div>
+                        </div>
+                      </div>
+                    
+      
+                      <div class="justify-content-center d-flex">
+                        <button id="back4" class="two" onclick="backHome()" style="background-color: transparent; display: none;"> 
+                          Back Menu
+                        </button>
+                      </div>
+                      
+                    </div>
+    </div>
+
+    <script src="mexican.js"></script>
